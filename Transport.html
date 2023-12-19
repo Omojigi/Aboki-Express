@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboki Express - Logistics Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateform() {
+            var name = document.getElementById( 'name') .value;
+            var email = document.getElementById( 'email') .value;
+            var message = document.getElementById( 'message') .value;
+
+            if (name === ''|| email === '' ||  message === '') {
+                alert( 'Please fill in all fields');
+                return false;
+            }
+            return true
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Aboki Express</h1>
+            <p>Your Trusted Logistics Partner</p>
+        </div>
+    </header>
+ 
+    <main>
+        <div class="bg-image">
+            <section class="hero-section">
+                <div class="container">
+                    <h2>Efficient Logistics Solutions for Your Business</h2>
+                    <p>Delivering excellence, reliability, and speed to meet your logistics needs.</p>
+                    <a href="#services" class="btn">Explore Services</a>
+                </div>
+            </section>
+        
+            <section id="services" class="services">
+                <div class="container">
+                    <h2>Our Services</h2>
+                    <div class="service">
+                        <h3>Express Shipping</h3>
+                        <p>Reliable and timely services to ensure to ensure your goods reach their destination on time.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Warehousing</h3>
+                        <p>Secure and efficient warehousing solutions for your inventory management. </p>
+                    </div>
+                    <div class="service">
+                        <h3>Custom Clearance</h3>
+                        <p>Streamlined customs clearance services for smooth internationl shipments.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <p>Ready to take your logistics to the next level? Reach out to us today!</p>
+                    <a href="mailto:abokedehamid@gmail.com" class="btn">Email Us</a>
+                </div>
+            </section>
+        </div>
+
+        <section>
+
+        </section class= "testimonials">
+        <div class="container">
+            <h2>What our Client Say</h2>
+            <div class="testimonial">
+                <p>"Aboki Express has been instrumental in our business growth. Their logistics services are top-notch</p>
+                <p class="author">- Awokunle Omotola, CEO of AWOKS Company</p>
+            </div>
+            <div class="testimonial">
+                <p>" Relaible and trustworthy. Aboki Express always delivers on time, making our operations seamless.</p>
+                <p class="author">- Abokede Omotayo, Logistics Manager</p>
+            </div>
+        </div>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Ready to take your logistics to the next level? Reach out to us today!</p>
+                <form onsubmit="return validateForm()">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mesage:</label>
+                    <input type="message" id="message" name="message" rows="4" required></textarea>
+
+                    <input type="submit" value="submit" class="btn">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aboki Express - Logistics Solutions</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
